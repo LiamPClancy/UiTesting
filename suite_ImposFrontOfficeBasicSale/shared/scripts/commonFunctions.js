@@ -1,4 +1,5 @@
 function addItems(){
+    clickButton(waitForObject(":ImPOS.Entry_Button"));
     clickButton(waitForObject(":ImPOS.Pie_Button", 6000));
     clickButton(waitForObject(":ImPOS.357 House Red_Button", 6000));
     clickButton(waitForObject(":ImPOS.doshiiTest_Button", 6000));
@@ -21,12 +22,14 @@ function addItems(){
 }
 
 function add3Items(){
+    clickButton(waitForObject(":ImPOS.Entry_Button"));
     clickButton(waitForObject(":ImPOS.Pie_Button", 6000));
     clickButton(waitForObject(":ImPOS.357 House Red_Button", 6000));
     clickButton(waitForObject(":ImPOS.doshiiTest_Button", 6000));
 }
 
 function add6Items(){
+    clickButton(waitForObject(":ImPOS.Entry_Button"));
     clickButton(waitForObject(":ImPOS.Pie_Button", 6000));
     clickButton(waitForObject(":ImPOS.357 House Red_Button", 6000));
     clickButton(waitForObject(":ImPOS.doshiiTest_Button", 6000));
@@ -37,13 +40,60 @@ function add6Items(){
 }
 
 function loginAdmin(){
-    clickButton(waitForObject(":1_Button", 6000));
-    clickButton(waitForObject(":3_Button", 6000));
-    doubleClick(waitForObject(":0_Button", 6000));
-    clickButton(waitForObject(":Log In_Button", 6000));
+    var loggedIn = false;
+    while(!loggedIn){
+        try {
+            type(waitForObject(":FrontOffice_Edit"), "1300");
+            clickButton(waitForObject(":Log In_Button", 6000));
+            loggedIn = true;
+        }
+        catch(err) {
+            loggedIn = false;
+        }
+    }
+    
+    
 }
 
 function LoginUser(){
-    clickButton(waitForObject(":1_Button", 6000));
-    clickButton(waitForObject(":Log In_Button", 6000));
+    var loggedIn = false;
+    while(!loggedIn){
+        try {
+            type(waitForObject(":FrontOffice_Edit"), "1300");
+            clickButton(waitForObject(":Log In_Button", 6000));
+            loggedIn = true;
+        }
+        catch(err) {
+            loggedIn = false;
+        }
+    }
+}
+
+function openTab(TabName){
+    var tabOpened = false;
+    while(!tabOpened){
+        try{
+            mouseClick(waitForObject(":Search:_Edit"), 64, 25, MouseButton.PrimaryButton);
+            type(waitForObject(":Search:_Edit", 6000), tabName);
+            if (object.exists(":Impos.Common.DataObjects.CheckAccessObject_ListItem")){
+                throw "search did not produce exclusive results";
+            }
+            mouseClick(waitForObjectItem(":_List", "Impos.Common.DataObjects.CheckAccessObject", 6000));
+            clickButton(waitForObject(":Open_Button", 6000));
+            tabOpened = true;
+        }catch(err){
+            for(i = 0; i<tabName.length; i++){
+                mouseClick(waitForObject(":Search:_Edit"), 64, 25, MouseButton.PrimaryButton);
+                type(waitForObject(":Search:_Edit"), "<Backspace>");
+            }
+            tabOpened = false;
+        }
+    }
+}
+
+
+function openTable(floorName, tableName){
+    clickButton(waitForObject(":ImPOS.Lockers_Button", 6000));
+    mouseClick(waitForObject("{type='TabItem' text='" + floorName +"'}", 6000));
+    doubleClick(waitForObject("{container={type='TabItem' text='" + floorName + "'} type='Button' text='" + tableName + "'}", 6000));
 }

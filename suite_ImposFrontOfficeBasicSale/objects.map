@@ -25,6 +25,7 @@
 :ImPOS.Douche_Button	{container=':ImPOS_Window' text='Douche' type='Button'}
 :ImPOS.Drinks_Button	{container=':ImPOS_Window' text='Drinks' type='Button'}
 :ImPOS.EFTPOS_Button	{container=':ImPOS_Window' text='EFTPOS' type='Button'}
+:ImPOS.Entry_Button	{container=':ImPOS_Window' text='Entry' type='Button'}
 :ImPOS.Ham  Cheese Cross_Button	{container=':ImPOS_Window' text='Ham  Cheese Cross' type='Button'}
 :ImPOS.Lockers_Button	{container=':ImPOS_Window' text='Lockers' type='Button'}
 :ImPOS.Log Out_Button	{container=':ImPOS_Window' text='Log Out' type='Button'}
