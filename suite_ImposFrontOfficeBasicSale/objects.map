@@ -1,0 +1,62 @@
+:0_Button	{container=':_Window' text='0' type='Button'}
+:1 - 80.1_Button	{container=':Floor Plan.1 - 80_TabItem' text='1' type='Button'}
+:1_Button	{container=':_Window' text='1' type='Button'}
+:3_Button	{container=':_Window' text='3' type='Button'}
+:Add New Tab_Button	{container=':_Window' text='Add New Tab' type='Button'}
+:Covers.2_Button	{container=':Covers_Window' text='2' type='Button'}
+:Covers.Enter_Button	{container=':Covers_Window' text='Enter' type='Button'}
+:Covers_Window	{text='Covers' type='Window'}
+:Floor Plan.1 - 80_TabItem	{container=':Floor Plan_Window' text='1 - 80' type='TabItem'}
+:Floor Plan.81 - 160_TabItem	{container=':Floor Plan_Window' text='81 - 160' type='TabItem'}
+:Floor Plan_Window	{text='Floor Plan' type='Window'}
+:ImPOS.357 House Red_Button	{container=':ImPOS_Window' text='357 House Red' type='Button'}
+:ImPOS.Accessories_Button	{container=':ImPOS_Window' text='Accessories' type='Button'}
+:ImPOS.Beer of the Week_Button	{container=':ImPOS_Window' text='Beer of the Week' type='Button'}
+:ImPOS.Beer/Wines_Button	{container=':ImPOS_Window' text='Beer/Wines' type='Button'}
+:ImPOS.Cake/Slice_Button	{container=':ImPOS_Window' text='Cake/Slice' type='Button'}
+:ImPOS.Cascade Light_Button	{container=':ImPOS_Window' text='Cascade Light' type='Button'}
+:ImPOS.Cash_Button	{container=':ImPOS_Window' text='Cash' type='Button'}
+:ImPOS.Chips_Button	{container=':ImPOS_Window' text='Chips' type='Button'}
+:ImPOS.Coffee Lrg_Button	{container=':ImPOS_Window' text='Coffee Lrg' type='Button'}
+:ImPOS.Coffee Reg_Button	{container=':ImPOS_Window' text='Coffee Reg' type='Button'}
+:ImPOS.Corona_Button	{container=':ImPOS_Window' text='Corona' type='Button'}
+:ImPOS.Douche_Button	{container=':ImPOS_Window' text='Douche' type='Button'}
+:ImPOS.Drinks_Button	{container=':ImPOS_Window' text='Drinks' type='Button'}
+:ImPOS.EFTPOS_Button	{container=':ImPOS_Window' text='EFTPOS' type='Button'}
+:ImPOS.Ham  Cheese Cross_Button	{container=':ImPOS_Window' text='Ham  Cheese Cross' type='Button'}
+:ImPOS.Lockers_Button	{container=':ImPOS_Window' text='Lockers' type='Button'}
+:ImPOS.Mocha_Button	{container=':ImPOS_Window' text='Mocha' type='Button'}
+:ImPOS.Mouth Wash_Button	{container=':ImPOS_Window' text='Mouth Wash' type='Button'}
+:ImPOS.Pie_Button	{container=':ImPOS_Window' text='Pie' type='Button'}
+:ImPOS.Recall_Button	{container=':ImPOS_Window' text='Recall' type='Button'}
+:ImPOS.Send Order_Button	{container=':ImPOS_Window' text='Send Order' type='Button'}
+:ImPOS.Snacks_Button	{container=':ImPOS_Window' text='Snacks' type='Button'}
+:ImPOS.Towel_Button	{container=':ImPOS_Window' text='Towel' type='Button'}
+:ImPOS.doshiiTest_Button	{container=':ImPOS_Window' text='doshiiTest' type='Button'}
+:ImPOS_Window	{text='ImPOS' type='Window'}
+:Impos.Common.DataObjects.CheckAccessObject.$0.00_Label	{container=':Impos.Common.DataObjects.CheckAccessObject_ListItem_4' text='$0.00' type='Label'}
+:Impos.Common.DataObjects.CheckAccessObject_ListItem	{container=':_List' occurrence='2' text='Impos.Common.DataObjects.CheckAccessObject' type='ListItem'}
+:Impos.Common.DataObjects.CheckAccessObject_ListItem_2	{container=':_List' occurrence='3' text='Impos.Common.DataObjects.CheckAccessObject' type='ListItem'}
+:Impos.Common.DataObjects.CheckAccessObject_ListItem_3	{container=':_List' occurrence='4' text='Impos.Common.DataObjects.CheckAccessObject' type='ListItem'}
+:Impos.Common.DataObjects.CheckAccessObject_ListItem_4	{container=':_List' text='Impos.Common.DataObjects.CheckAccessObject' type='ListItem'}
+:Log In_Button	{container=':_Window' text='Log In' type='Button'}
+:Message.Continue_Button	{container=':Message_Window' text='Continue' type='Button'}
+:Message.Save and Open_Button	{container=':Message_Window' text='Save and Open' type='Button'}
+:Message.Save_Button	{container=':Message_Window' text='Save' type='Button'}
+:Message.System.Windows.Controls.TextBlock_Edit	{container=':Message_Window' leftObject=':Message.System.Windows.Controls.TextBlock_Label' type='Edit'}
+:Message.System.Windows.Controls.TextBlock_Label	{container=':Message_Window' text='System.Windows.Controls.TextBlock' type='Label'}
+:Message_Window	{text='Message' type='Window'}
+:Open_Button	{container=':_Window' text='Open' type='Button'}
+:Search:_Edit	{container=':_Window' leftObject=':Search:_Label' type='Edit'}
+:Search:_Label	{container=':_Window' text='Search:' type='Label'}
+:System.Windows.Controls.StackPanel_Button	{container=':_Window' occurrence='3' text='System.Windows.Controls.StackPanel' type='Button'}
+:System.Windows.Controls.StackPanel_Button_2	{container=':_Window' occurrence='2' text='System.Windows.Controls.StackPanel' type='Button'}
+:Tabs_Button	{container=':_Window' occurrence='3' text='System.Windows.Controls.StackPanel' type='Button'}
+:Tabs_Label	{container=':_Window' text='Tabs' type='Label'}
+:Tips.2_Button	{container=':Tips_Window' text='2' type='Button'}
+:Tips.Enter_Button	{container=':Tips_Window' text='Enter' type='Button'}
+:Tips_Window	{text='Tips' type='Window'}
+:_Image	{container=':_Window' type='Image'}
+:_List	{container=':_Window' type='List'}
+:_Window	{text='' type='Window'}
+:btn_ShowTabs_Button	{container=':_Window' occurrence='3' text='System.Windows.Controls.StackPanel' type='Button'}
