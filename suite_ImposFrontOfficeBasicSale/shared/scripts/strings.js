@@ -1,26 +1,29 @@
+//
+timeOutValueMS = 120000;
+
 //tab variables
 tabsToCreatePerLoop = 10;
 
 //tab prefix names
-tabNamePrefix1 = 'MyTab1';
-tabNamePrefix2 = 'MyTab2';
-tabNamePrefix3 = 'MyTab3';
-tabNamePrefix4 = 'MyTab4';
-tabNamePrefix5 = 'MyTab5';
-tabNamePrefix6 = 'MyTab6';
-tabNamePrefix7 = 'MyTab7';
-tabNamePrefix8 = 'MyTab8';
-tabNamePrefix9 = 'MyTab9';
-tabNamePrefix10 = 'MyTab10';
-tabNamePrefix11 = 'MyTab11';
-tabNamePrefix12 = 'MyTab12';
-tabNamePrefix13 = 'MyTab13';
-tabNamePrefix14 = 'MyTab14';
-tabNamePrefix15 = 'MyTab15';
-tabNamePrefix16 = 'MyTab16';
-tabNamePrefix17 = 'MyTab17';
-tabNamePrefix18 = 'MyTab18';
-tabNamePrefix19 = 'MyTab19';
+tabNamePrefix1 = '1MyTab1';
+tabNamePrefix2 = '2MyTab2';
+tabNamePrefix3 = '3MyTab3';
+tabNamePrefix4 = '4MyTab4';
+tabNamePrefix5 = '5MyTab5';
+tabNamePrefix6 = '6MyTab6';
+tabNamePrefix7 = '7MyTab7';
+tabNamePrefix8 = '8MyTab8';
+tabNamePrefix9 = '9MyTab9';
+tabNamePrefix10 = '10MyTab10';
+tabNamePrefix11 = '11MyTab11';
+tabNamePrefix12 = '12MyTab12';
+tabNamePrefix13 = '13MyTab13';
+tabNamePrefix14 = '14MyTab14';
+tabNamePrefix15 = '15MyTab15';
+tabNamePrefix16 = '16MyTab16';
+tabNamePrefix17 = '17MyTab17';
+tabNamePrefix18 = '18MyTab18';
+tabNamePrefix19 = '19MyTab19';
 
 //floor plan tabs
 floorTab1Text = '1 - 80';

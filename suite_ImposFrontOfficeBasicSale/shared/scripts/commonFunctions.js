@@ -1,66 +1,69 @@
 function addItems(){
-    clickButton(waitForObject(":ImPOS.Entry_Button"));
-    clickButton(waitForObject(":ImPOS.Pie_Button", 6000));
-    clickButton(waitForObject(":ImPOS.357 House Red_Button", 6000));
-    clickButton(waitForObject(":ImPOS.doshiiTest_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Accessories_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Douche_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Mouth Wash_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Towel_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Beer/Wines_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Beer of the Week_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Corona_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Cascade Light_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Drinks_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Coffee Lrg_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Coffee Reg_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Mocha_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Snacks_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Cake/Slice_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Ham  Cheese Cross_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Chips_Button", 6000));
+    source(findFile("scripts", "strings.js"));
+    clickButton(waitForObject(":ImPOS.Entry_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Pie_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.357 House Red_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.doshiiTest_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Accessories_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Douche_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Mouth Wash_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Towel_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Beer/Wines_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Beer of the Week_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Corona_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Cascade Light_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Drinks_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Coffee Lrg_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Coffee Reg_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Mocha_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Snacks_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Cake/Slice_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Ham  Cheese Cross_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Chips_Button", timeOutValueMS));
 }
 
 function add3Items(){
-    clickButton(waitForObject(":ImPOS.Entry_Button"));
-    clickButton(waitForObject(":ImPOS.Pie_Button", 6000));
-    clickButton(waitForObject(":ImPOS.357 House Red_Button", 6000));
-    clickButton(waitForObject(":ImPOS.doshiiTest_Button", 6000));
+    source(findFile("scripts", "strings.js"));
+    clickButton(waitForObject(":ImPOS.Entry_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Pie_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.357 House Red_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.doshiiTest_Button", timeOutValueMS));
 }
 
 function add6Items(){
-    clickButton(waitForObject(":ImPOS.Entry_Button"));
-    clickButton(waitForObject(":ImPOS.Pie_Button", 6000));
-    clickButton(waitForObject(":ImPOS.357 House Red_Button", 6000));
-    clickButton(waitForObject(":ImPOS.doshiiTest_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Accessories_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Douche_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Mouth Wash_Button", 6000));
-    clickButton(waitForObject(":ImPOS.Towel_Button", 6000));
+    source(findFile("scripts", "strings.js"));
+    clickButton(waitForObject(":ImPOS.Entry_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Pie_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.357 House Red_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.doshiiTest_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Accessories_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Douche_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Mouth Wash_Button", timeOutValueMS));
+    clickButton(waitForObject(":ImPOS.Towel_Button", timeOutValueMS));
 }
 
 function loginAdmin(){
+    source(findFile("scripts", "strings.js"));
     var loggedIn = false;
     while(!loggedIn){
         try {
-            type(waitForObject(":FrontOffice_Edit"), "1300");
-            clickButton(waitForObject(":Log In_Button", 6000));
+            type(waitForObject(":FrontOffice_Edit", timeOutValueMS), "1300");
+            clickButton(waitForObject(":Log In_Button", timeOutValueMS));
             loggedIn = true;
         }
         catch(err) {
             loggedIn = false;
         }
     }
-    
-    
 }
 
 function LoginUser(){
+    source(findFile("scripts", "strings.js"));
     var loggedIn = false;
     while(!loggedIn){
         try {
-            type(waitForObject(":FrontOffice_Edit"), "1300");
-            clickButton(waitForObject(":Log In_Button", 6000));
+            type(waitForObject(":FrontOffice_Edit", timeOutValueMS), "1300");
+            clickButton(waitForObject(":Log In_Button", timeOutValueMS));
             loggedIn = true;
         }
         catch(err) {
@@ -70,22 +73,31 @@ function LoginUser(){
 }
 
 function openTab(TabName){
+    source(findFile("scripts", "strings.js"));
     var tabOpened = false;
     while(!tabOpened){
         try{
-            mouseClick(waitForObject(":Search:_Edit"), 64, 25, MouseButton.PrimaryButton);
-            type(waitForObject(":Search:_Edit", 6000), tabName);
+            type(waitForObject(":Search:_Edit", timeOutValueMS), tabName);
+            snooze(1);
             if (object.exists(":Impos.Common.DataObjects.CheckAccessObject_ListItem")){
                 throw "search did not produce exclusive results";
             }
-            mouseClick(waitForObjectItem(":_List", "Impos.Common.DataObjects.CheckAccessObject", 6000));
-            clickButton(waitForObject(":Open_Button", 6000));
-            tabOpened = true;
+            mouseClick(waitForObjectItem(":_List", "Impos.Common.DataObjects.CheckAccessObject", timeOutValueMS));
+            clickButton(waitForObject(":Open_Button", timeOutValueMS));
+            try{
+                clickButton(waitForObject(":Message.Continue_Button", timeOutValueMS));
+                for(i = 0; i<tabName.length; i++){
+                    type(waitForObject(":Search:_Edit", timeOutValueMS), "<Backspace>");
+                };
+                tabOpened = false;
+            }catch(err){
+                tabOpened = true;
+                //nothing needs to happen, this is the expected path. 
+            }
         }catch(err){
             for(i = 0; i<tabName.length; i++){
-                mouseClick(waitForObject(":Search:_Edit"), 64, 25, MouseButton.PrimaryButton);
-                type(waitForObject(":Search:_Edit"), "<Backspace>");
-            }
+                type(waitForObject(":Search:_Edit", timeOutValueMS), "<Backspace>");
+            };
             tabOpened = false;
         }
     }
@@ -93,7 +105,14 @@ function openTab(TabName){
 
 
 function openTable(floorName, tableName){
-    clickButton(waitForObject(":ImPOS.Lockers_Button", 6000));
-    mouseClick(waitForObject("{type='TabItem' text='" + floorName +"'}", 6000));
-    doubleClick(waitForObject("{container={type='TabItem' text='" + floorName + "'} type='Button' text='" + tableName + "'}", 6000));
+    source(findFile("scripts", "strings.js"));
+    clickButton(waitForObject(":ImPOS.Lockers_Button", timeOutValueMS));
+    openTableFloorPlan(floorName, tableName);
+}
+
+function openTableFloorPlan(floorName, tableName){
+    source(findFile("scripts", "strings.js"));
+    mouseClick(waitForObject("{type='TabItem' text='" + floorName +"'}", timeOutValueMS));
+    doubleClick(waitForObject("{container={type='TabItem' text='" + floorName + "'} type='Button' text='" + tableName + "'}", timeOutValueMS));
+ 
 }

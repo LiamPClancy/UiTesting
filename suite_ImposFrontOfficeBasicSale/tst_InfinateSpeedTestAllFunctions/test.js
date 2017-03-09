@@ -11,7 +11,7 @@ function main() {
     numberOfTabsToCreate = tabsToCreatePerLoop;
     
     startApplication("FrontOffice");
-    clickButton(waitForObject(":Message.Continue_Button"));
+    clickButton(waitForObject(":Message.Continue_Button", 60000));
     
     while(true){
         basicCashSale();
@@ -19,7 +19,7 @@ function main() {
         
         openUnoccupiedTableAddItems(floorPlanTab, tableNameList);
         openOccupiedTableAndAddItems(floorPlanTab, tableNameList);
-        CashOffOccupiedTable(floorPlanTab, tableNameList)
+        CashOffOccupiedTable(floorPlanTab, tableNameList);
         
         createAndOpenTabAddItem(currentTabNamePrefix, numberOfTabsToCreate);
         openTabWithTabNameAddItems(currentTabNamePrefix, numberOfTabsToCreate);

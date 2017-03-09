@@ -9,7 +9,7 @@ function main() {
     numberOfTabsToCreate = tabsToCreatePerLoop;
     
     startApplication("FrontOffice");
-    clickButton(waitForObject(":Message.Continue_Button"));
+    clickButton(waitForObject(":Message.Continue_Button", timeOutValueMS));
     
     while(true){
         createAndOpenTabAddItem(currentTabNamePrefix, numberOfTabsToCreate);

@@ -1,15 +1,17 @@
 function basicCashSale(){
+    source(findFile("scripts", "strings.js"));
     source(findFile("scripts", "commonFunctions.js"));
     loginAdmin()
     add6Items()
-    clickButton(waitForObject(":ImPOS.Cash_Button", 6000));
+    clickButton(waitForObject(":ImPOS.Cash_Button", timeOutValueMS));
 }
 
 function basicEftposSaleWithTips(){
+    source(findFile("scripts", "strings.js"));
     source(findFile("scripts", "commonFunctions.js"));
     loginAdmin();
     addItems();
-    clickButton(waitForObject(":ImPOS.EFTPOS_Button", 6000));
-    clickButton(waitForObject(":Tips.2_Button", 6000));
-    mouseClick(waitForObject(":Tips.Enter_Button", 6000));
+    clickButton(waitForObject(":ImPOS.EFTPOS_Button", timeOutValueMS));
+    clickButton(waitForObject(":Tips.2_Button", timeOutValueMS));
+    mouseClick(waitForObject(":Tips.Enter_Button", timeOutValueMS));
 }
