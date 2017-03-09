@@ -9,6 +9,8 @@
 :Floor Plan.1 - 80_TabItem	{container=':Floor Plan_Window' text='1 - 80' type='TabItem'}
 :Floor Plan.81 - 160_TabItem	{container=':Floor Plan_Window' text='81 - 160' type='TabItem'}
 :Floor Plan_Window	{text='Floor Plan' type='Window'}
+:FrontOffice_Edit	{aboveObject=':FrontOffice_Label' container=':_Window' type='Edit'}
+:FrontOffice_Label	{container=':_Window' text='FrontOffice' type='Label'}
 :ImPOS.357 House Red_Button	{container=':ImPOS_Window' text='357 House Red' type='Button'}
 :ImPOS.Accessories_Button	{container=':ImPOS_Window' text='Accessories' type='Button'}
 :ImPOS.Beer of the Week_Button	{container=':ImPOS_Window' text='Beer of the Week' type='Button'}
@@ -25,6 +27,7 @@
 :ImPOS.EFTPOS_Button	{container=':ImPOS_Window' text='EFTPOS' type='Button'}
 :ImPOS.Ham  Cheese Cross_Button	{container=':ImPOS_Window' text='Ham  Cheese Cross' type='Button'}
 :ImPOS.Lockers_Button	{container=':ImPOS_Window' text='Lockers' type='Button'}
+:ImPOS.Log Out_Button	{container=':ImPOS_Window' text='Log Out' type='Button'}
 :ImPOS.Mocha_Button	{container=':ImPOS_Window' text='Mocha' type='Button'}
 :ImPOS.Mouth Wash_Button	{container=':ImPOS_Window' text='Mouth Wash' type='Button'}
 :ImPOS.Pie_Button	{container=':ImPOS_Window' text='Pie' type='Button'}

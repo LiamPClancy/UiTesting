@@ -35,3 +35,15 @@ function add6Items(){
     clickButton(waitForObject(":ImPOS.Mouth Wash_Button", 6000));
     clickButton(waitForObject(":ImPOS.Towel_Button", 6000));
 }
+
+function loginAdmin(){
+    clickButton(waitForObject(":1_Button", 6000));
+    clickButton(waitForObject(":3_Button", 6000));
+    doubleClick(waitForObject(":0_Button", 6000));
+    clickButton(waitForObject(":Log In_Button", 6000));
+}
+
+function LoginUser(){
+    clickButton(waitForObject(":1_Button", 6000));
+    clickButton(waitForObject(":Log In_Button", 6000));
+}
