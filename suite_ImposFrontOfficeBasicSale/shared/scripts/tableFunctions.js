@@ -13,7 +13,7 @@ function openUnoccupiedTableAddItems(floorPlanTab, tableNames){
             
         }
         addItems();
-        clickButton(waitForObject(":ImPOS.Send Order_Button", timeOutValueMS));
+        sendOrder();
     }
 }
 
@@ -32,7 +32,7 @@ function openOccupiedTableAndAddItems(floorPlanTab, tableNames){
             mouseClick(waitForObject(":Covers.Enter_Button", timeOutValueMS));
             addItems();
         }
-        clickButton(waitForObject(":ImPOS.Send Order_Button", timeOutValueMS));
+        sendOrder();
     }
 }
 

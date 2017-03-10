@@ -3,6 +3,7 @@
 :1_Button	{container=':_Window' text='1' type='Button'}
 :3_Button	{container=':_Window' text='3' type='Button'}
 :Add New Tab_Button	{container=':_Window' text='Add New Tab' type='Button'}
+:C_Button	{container=':_Window' text='C' type='Button'}
 :Covers.2_Button	{container=':Covers_Window' text='2' type='Button'}
 :Covers.Enter_Button	{container=':Covers_Window' text='Enter' type='Button'}
 :Covers_Window	{text='Covers' type='Window'}

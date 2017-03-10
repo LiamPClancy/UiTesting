@@ -10,7 +10,7 @@ function createAndOpenTabAddItem(tabNamePrefix, loopLimit){
         while(!editTabclicked){
             clickButton(waitForObject(":Add New Tab_Button", timeOutValueMS));
             try{
-                mouseClick(waitForObject(":Message.System.Windows.Controls.TextBlock_Edit", timeOutValueMS), 116, 18, MouseButton.PrimaryButton);
+                waitForObject(":Message.System.Windows.Controls.TextBlock_Edit", timeOutValueMS);
                 editTabclicked = true;
             }catch(err){
                 editTabclicked = false;
@@ -22,12 +22,13 @@ function createAndOpenTabAddItem(tabNamePrefix, loopLimit){
             clickButton(waitForObject(":Message.Save and Open_Button", timeOutValueMS));
             try{
                 clickButton(waitForObject(":Message.Save and Open_Button", timeOutValueMS));
+                waitForObject(":ImPOS.Entry_Button", timeOutValueMS);
             }catch(err){
                 tabOpened = true;
             }
         }
         add6Items();
-        clickButton(waitForObject(":ImPOS.Send Order_Button", timeOutValueMS));
+        sendOrder();
     }
 }
 
@@ -42,7 +43,7 @@ function openTabWithTabNameAddItems(tabNamePrefix, loopLimit){
         mouseClick(waitForObject("{container={type='WPFControl' name='btn_ShowTabs'} type='Label' name='TopLabel' text='Tabs'}", timeOutValueMS));
         openTab(tabName);
         add3Items();
-        clickButton(waitForObject(":ImPOS.Send Order_Button", timeOutValueMS));
+        sendOrder();
     }
 }
 

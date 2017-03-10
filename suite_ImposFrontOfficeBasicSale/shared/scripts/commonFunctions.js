@@ -46,12 +46,13 @@ function loginAdmin(){
     source(findFile("scripts", "strings.js"));
     var loggedIn = false;
     while(!loggedIn){
-        try {
-            type(waitForObject(":FrontOffice_Edit", timeOutValueMS), "1300");
-            clickButton(waitForObject(":Log In_Button", timeOutValueMS));
+        clickButton(waitForObject(":C_Button"));
+        type(waitForObject(":FrontOffice_Edit", timeOutValueMS), "1300");
+        clickButton(waitForObject(":Log In_Button", timeOutValueMS));
+        try{
+            waitForObject(":ImPOS.Entry_Button", timeOutValueMS);
             loggedIn = true;
-        }
-        catch(err) {
+        }catch(err){
             loggedIn = false;
         }
     }
@@ -61,12 +62,13 @@ function LoginUser(){
     source(findFile("scripts", "strings.js"));
     var loggedIn = false;
     while(!loggedIn){
-        try {
-            type(waitForObject(":FrontOffice_Edit", timeOutValueMS), "1300");
-            clickButton(waitForObject(":Log In_Button", timeOutValueMS));
+        clickButton(waitForObject(":C_Button"));
+        type(waitForObject(":FrontOffice_Edit", timeOutValueMS), "1300");
+        clickButton(waitForObject(":Log In_Button", timeOutValueMS));
+        try{
+            waitForObject(":ImPOS.Entry_Button", timeOutValueMS);
             loggedIn = true;
-        }
-        catch(err) {
+        }catch(err){
             loggedIn = false;
         }
     }
@@ -85,15 +87,25 @@ function openTab(TabName){
             mouseClick(waitForObjectItem(":_List", "Impos.Common.DataObjects.CheckAccessObject", timeOutValueMS));
             clickButton(waitForObject(":Open_Button", timeOutValueMS));
             try{
-                clickButton(waitForObject(":Message.Continue_Button", timeOutValueMS));
+                clickButton(waitForObject(":Message.Continue_Button"));
                 for(i = 0; i<tabName.length; i++){
                     type(waitForObject(":Search:_Edit", timeOutValueMS), "<Backspace>");
                 };
                 tabOpened = false;
             }catch(err){
+                //nothing needs to happen, this is the expected path.
                 tabOpened = true;
-                //nothing needs to happen, this is the expected path. 
             }
+            if (tabOpened){
+                try{
+                    //try to see if the menu is visible
+                    waitForObject(":ImPOS.Entry_Button", timeOutValueMS);
+                    tabOpened = true;
+                }catch(err){
+                    tabOpened = false;
+                }
+            }
+            
         }catch(err){
             for(i = 0; i<tabName.length; i++){
                 type(waitForObject(":Search:_Edit", timeOutValueMS), "<Backspace>");
@@ -115,4 +127,30 @@ function openTableFloorPlan(floorName, tableName){
     mouseClick(waitForObject("{type='TabItem' text='" + floorName +"'}", timeOutValueMS));
     doubleClick(waitForObject("{container={type='TabItem' text='" + floorName + "'} type='Button' text='" + tableName + "'}", timeOutValueMS));
  
+}
+
+function sendOrder(){
+    var hasLoggedOut = false;
+    while(!hasLoggedOut){
+        try{
+            clickButton(waitForObject(":ImPOS.Send Order_Button", timeOutValueMS));
+            waitForObject(":FrontOffice_Edit", timeOutValueMS)
+            hasLoggedOut = true;
+        }catch(err){
+            hasLoggedOut = false;
+        }
+    }
+}
+
+function cashOffOrder(){
+    var hasLoggedOut = false;
+    while(!hasLoggedOut){
+        try{
+            clickButton(waitForObject(":ImPOS.Cash_Button", timeOutValueMS));
+            waitForObject(":FrontOffice_Edit", timeOutValueMS)
+            hasLoggedOut = true;
+        }catch(err){
+            hasLoggedOut = false;
+        }
+    }
 }

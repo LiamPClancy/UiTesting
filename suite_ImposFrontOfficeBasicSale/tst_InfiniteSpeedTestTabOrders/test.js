@@ -6,15 +6,13 @@ function main() {
     
   //change these values (see strings.js file) for each concurrent terminal running the test.
     currentTabNamePrefix = tabNamePrefix1;
-    numberOfTabsToCreate = tabsToCreatePerLoop;
+    numberOfTabsToCreate = 2;
     
     startApplication("FrontOffice");
     clickButton(waitForObject(":Message.Continue_Button", timeOutValueMS));
     
     while(true){
         createAndOpenTabAddItem(currentTabNamePrefix, numberOfTabsToCreate);
-        openTabWithTabNameAddItems(currentTabNamePrefix, numberOfTabsToCreate);
-        openTabWithTabNameAddItems(currentTabNamePrefix, numberOfTabsToCreate);
         openTabWithTabNameAddItems(currentTabNamePrefix, numberOfTabsToCreate);
         openTabAndCashOff(currentTabNamePrefix, numberOfTabsToCreate);
     }

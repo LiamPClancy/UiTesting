@@ -1,9 +1,9 @@
 function basicCashSale(){
     source(findFile("scripts", "strings.js"));
     source(findFile("scripts", "commonFunctions.js"));
-    loginAdmin()
-    add6Items()
-    clickButton(waitForObject(":ImPOS.Cash_Button", timeOutValueMS));
+    loginAdmin();
+    add6Items();
+    cashOffOrder();
 }
 
 function basicEftposSaleWithTips(){
